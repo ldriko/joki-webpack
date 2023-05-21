@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocean Film | Destinasi Rekomendasi Filmmu</title>
+    <link rel="icon" href="images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sticky top-0 bg-white shadow">
+      <div class="m-auto max-w-screen-xl py-6">
+        <div class="flex items-center justify-between">
+          <img src="images/logo.svg" alt="OCEANFILM" class="h-10" />
+          <!-- <div class="flex gap-2">
+            <input
+              type="text"
+              placeholder="Masukkan nama film, genre, atau artis"
+              class="px-4 py-3 w-64 border"
+            />
+            <button class="px-4 py-3 bg-primary text-white font-bold">
+              Cari
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="border-b-2 border-dashed shadow-xl">
+      <div class="m-auto py-12 max-w-screen-xl">
+        <div class="mb-6">
+          <div class="text-3xl font-bold">Sedang Tayang</div>
+          <div class="text-lg">
+            Film-film yang saat ini sedang tayang di bioskop sekitar anda!
+          </div>
+        </div>
+        <div id="now-playing" class="flex overflow-x-auto gap-4"></div>
+      </div>
+    </div>
+    <div class="bg-gray-50">
+      <div class="m-auto max-w-screen-xl py-12">
+        <div class="mb-6">
+          <div class="mb-2 text-3xl font-bold">Bingung Nonton Apa?</div>
+          <div class="text-lg">
+            Pilih genre yang kamu suka, kami akan memberikan rekomendasi film
+            yang cocok untukmu!
+          </div>
+        </div>
+        <div id="genres" class="flex flex-wrap gap-2 mb-6"></div>
+        <div id="recommendation" class="flex flex-wrap gap-x-4 gap-y-24"></div>
+      </div>
+    </div>
+    <div
+      class="py-4 flex justify-center bg-gradient-to-r from-primary via-blue-600 to-secondary text-white font-semibold"
+    >
+      Ocean Film &copy; 2023
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

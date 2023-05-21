@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: ['./src/index.js', './src/index.html'],
+  entry: ['./src/index.html', './src/main.js'],
   output: {
     path: path.resolve(__dirname, 'dist')
     // filename: 'index.js'
@@ -12,7 +12,7 @@ module.exports = {
       {
         test: /\.html$/i,
         include: path.resolve(__dirname, 'src'),
-        use: ['file-loader?name=[name].[ext]', 'html-loader']
+        use: ['file-loader?name=[name].[ext]']
       },
       {
         test: /\.js$/i,

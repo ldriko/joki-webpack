@@ -1,4 +1,5 @@
 import './style.css';
+import './images/logo.svg';
 import 'iconify-icon';
 import { initNowPlaying } from './repository/now-playing.js';
 import { initGenres } from './repository/genre.js';
